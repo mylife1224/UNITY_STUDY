@@ -1,0 +1,28 @@
+# S03_04_Async_Await
+
+## ?™ìŠµëª©í‘œ
+async/await + Task.Delay ë¹„ë™ê¸?ë¡œë”© ?°ì¶œ (?¸ë? ?¨í‚¤ì§€ ?†ìŒ)
+
+## ì¡°ì‘ë²?1. ë¹??¤ë¸Œ?íŠ¸??`SceneLoaderAsync.cs` ë¶€ì°???Play
+2. L ???…ë ¥, Console?ì„œ 0.2ì´?ê°„ê²© ì§„í–‰ë¥?ë¡œê·¸ ?•ì¸
+3. ?¸ìŠ¤?™í„° progress ë°?ë³€???•ì¸
+
+## ?œê·¸ ì°¾ì•„ë³´ê¸°
+### [S03-04-01] Task.Delay ? íƒ ?´ìœ 
+?„ì¹˜: `Scripts/SceneLoaderAsync.cs:11`
+> await Task.Delay???œì–´ê¶Œë§Œ ?‘ë³´??ë©”ì¸ ë£¨í”„ê°€ ê³„ì† ?? Thread.Sleep?€ ê²Œì„ ?„ì²´ ?•ì?.
+> ?ì„¸: `Stage03 DeepDive [S03-04-01]` ì°¸ì¡°.
+
+### [S03-04-02] async void ?œí•œ
+?„ì¹˜: `Scripts/SceneLoaderAsync.cs:36`
+> async void??ë²„íŠ¼/?´ë²¤??ì§„ì…???„ìš©. ?ˆì™¸ê°€ ì¡°ìš©???Œì‹¤?˜ë?ë¡?ë°˜ë“œ???´ë? try/catch.
+> ?ì„¸: `Stage03 DeepDive [S03-04-02]` ì°¸ì¡°.
+
+### [S03-04-03] ?¤ë ˆ??ì£¼ì˜?€ ì½”ë£¨???€???„ì¹˜: `Scripts/SceneLoaderAsync.cs:45`
+> await ?´í›„ Unity API??ë©”ì¸ ?¤ë ˆ??ë³µê? ?„ì œ. ?¤ì „ ë¡œë”©?€ ì½”ë£¨??UniTask ê¶Œì¥.
+> ?ì„¸: `Stage03 DeepDive [S03-04-03]` ì°¸ì¡°.
+
+## ?•ì¸ë¬¸ì œ
+1. Task.Delay?€ Thread.Sleep??ì°¨ì´??
+2. async void????ì§„ì…???„ìš©?¼ë¡œ ?¨ì•¼ ?˜ëŠ”ê°€?
+3. await ?´í›„ Unity API ?¸ì¶œ ??ì£¼ì˜?ì??
