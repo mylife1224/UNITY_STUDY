@@ -28,3 +28,9 @@ Addressables, Cinemachine 3.x, Burst, Collections, Test Framework
 ## 현재 상태
 - 컴파일 에러 0, 씬 42개 Lab 부착 완료, S08_03 자가테스트 PASS 확인
 - 다음: S00_01부터 순차 학습 진행
+
+## Git
+- 원격: `https://github.com/mylife1224/UNITY_STUDY` (main)
+- 제외: Library/, Temp/, Logs/, UserSettings/ 등 (.gitignore)
+- 포함: Assets/, ProjectSettings/, Packages/, *.md
+- 새 세션 작업 후 커밋 pushed 여부 확인: `git status -sb`
